@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CronaWeb</title>
+  <meta name="description"
+    content="Desenvolvimento de sites profissionais, rápidos e minimalistas para lojas, lava-jatos, barbearias e empresas.">
+  <meta name="theme-color" content="#060709">
+
+  <!-- Compartilhamento Social (Open Graph) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="cronaweb">
+  <meta property="og:description" content="Sites modernos que transformam visitantes em clientes.">
+  <meta property="og:image" content="assets/logo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+
+  <!-- Tipografia Google Fonts (Space Grotesk + Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Folha de Estilos Principal -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================
+       EFEITOS DE ILUMINAÇÃO DE FUNDO (AMBIENT GLOW)
+       ======================================================== -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <!-- ========================================================
+       CABEÇALHO & NAVEGAÇÃO PRINCIPAL
+       ======================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- Logotipo com Animação Flutuante -->
+      <a href="#inicio" class="logo-link">
+        <img src="assets/logo.jpg" alt="Logo Crona Web" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-title">CRONA</span>
+          <span class="logo-subtitle">WEB</span>
+        </div>
+      </a>
+
+      <!-- Menu de Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botões de Ação do Topo -->
+      <div class="nav-actions">
+        <!-- Instagram Oficial com SVG Nativo -->
+        <a href="https://instagram.com/cronaweb" target="_blank" class="btn btn-glass btn-nav-insta"
+          aria-label="Instagram @cronaweb">
+          <svg class="insta-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span>@cronaweb</span>
+        </a>
+
+        <!-- WhatsApp Oficial -->
+        <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+          target="_blank" class="btn btn-metallic btn-nav">
+          <i data-lucide="message-square"></i>
+          <span>WhatsApp</span>
+        </a>
+
+        <!-- Botão Menu Mobile -->
+        <button class="mobile-toggle" aria-label="Abrir Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       SEÇÃO HERO (DESTAQUE PRINCIPAL)
+       ======================================================== -->
+  <section id="inicio" class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-text-area">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Desenvolvimento Web Exclusivo</span>
+        </div>
+
+        <h1 class="hero-title">
+          Sites modernos que <span class="silver-text-shine">geram clientes</span> todos os dias.
+        </h1>
+
+        <p class="hero-description">
+          Criamos sites rápidos e minimalistas sob medida para <strong>lojas, lava-jatos, barbearias e
+            empresas</strong>. Design profissional e direto no celular e no computador.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Quero%20criar%20um%20site%20para%20o%20meu%20neg%C3%B3cio."
+            target="_blank" class="btn btn-whatsapp">
+            <i data-lucide="message-circle"></i>
+            <span>Falar no WhatsApp</span>
+          </a>
+          <a href="#projetos" class="btn btn-glass">
+            <span>Ver Projetos</span>
+            <i data-lucide="arrow-down" style="width: 15px; height: 15px;"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card Visual Minimalista de Apresentação -->
+      <div class="hero-visual">
+        <div class="showcase-glass-card">
+          <div class="card-header-bar">
+            <div class="card-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="card-badge-status">
+              <i data-lucide="sparkles"
+                style="width: 12px; height: 12px; display: inline-block; vertical-align: middle;"></i> Crona Web
+            </span>
+          </div>
+
+          <div class="preview-mini-list">
+            <div class="preview-item">
+              <div class="item-icon"><i data-lucide="car"></i></div>
+              <div class="item-text">
+                <strong>Lava-Jatos &amp; Barbearias</strong>
+                <span>Agendamentos automáticos sem filas</span>
+              </div>
+            </div>
+
+            <div class="preview-item">
+              <div class="item-icon"><i data-lucide="shopping-bag"></i></div>
+              <div class="item-text">
+                <strong>Lojas &amp; Catálogos</strong>
+                <span>Vendas online com Pix e Cartão</span>
+              </div>
+            </div>
+
+            <div class="preview-item">
+              <div class="item-icon"><i data-lucide="globe"></i></div>
+              <div class="item-text">
+                <strong>Sites Institucionais</strong>
+                <span>Presença digital de alta credibilidade</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SEÇÃO SOLUÇÕES (ENXUTA, COMPACTA & SEM POLUIÇÃO VISUAL)
+       ======================================================== -->
+  <section id="solucoes" class="section-compact">
+    <div class="container">
+      <div class="compact-solutions-bar">
+        <!-- Item 1: Agendamentos -->
+        <div class="compact-sol-item">
+          <div class="compact-sol-icon">
+            <i data-lucide="calendar-check"></i>
+          </div>
+          <div>
+            <h3 class="compact-sol-title">Agendamentos Online</h3>
+            <p class="compact-sol-text">Para lava-jatos, barbearias e clínicas. Seu cliente escolhe o dia e horário
+              livre direto pelo celular.</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Lojas & Catálogos -->
+        <div class="compact-sol-item">
+          <div class="compact-sol-icon">
+            <i data-lucide="shopping-bag"></i>
+          </div>
+          <div>
+            <h3 class="compact-sol-title">Lojas Virtuais &amp; Catálogos</h3>
+            <p class="compact-sol-text">Venda seus produtos 24h por dia com catálogo limpo, cálculo de frete e Pix
+              instantâneo.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Sites Institucionais -->
+        <div class="compact-sol-item">
+          <div class="compact-sol-icon">
+            <i data-lucide="globe"></i>
+          </div>
+          <div>
+            <h3 class="compact-sol-title">Sites Institucionais</h3>
+            <p class="compact-sol-text">Páginas de alto padrão para posicionar sua empresa com autoridade e converter em
+              anúncios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SEÇÃO PROJETOS (CARROSSEL INFINITO COM 3 TELAS REAIS CADA)
+       ======================================================== -->
+  <section id="projetos" class="section">
+    <div class="container">
+      <div class="section-head-carousel">
+        <div>
+          <span class="section-tag">Portfólio em Ação</span>
+          <h2 class="section-title">Projetos <span class="silver-text">Desenvolvidos</span></h2>
+          <p class="section-subtitle">Passe para o lado ou clique nos pontinhos para ver as telas de cada site.</p>
+        </div>
+        <!-- Controles de Navegação do Carrossel -->
+        <div class="carousel-nav-buttons">
+          <button class="carousel-btn prev-btn" id="carouselPrev" aria-label="Projeto Anterior">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <button class="carousel-btn next-btn" id="carouselNext" aria-label="Próximo Projeto">
+            <i data-lucide="chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Trilha do Carrossel -->
+      <div class="carousel-viewport" id="carouselViewport">
+        <div class="carousel-track" id="carouselTrack">
+
+          <!-- Slide 1: Almada Gastrobar -->
+          <div class="carousel-slide">
+            <div class="project-item-card">
+              <div class="project-thumb-box">
+                <img src="assets/projects/almada-1.png" alt="Almada Gastrobar - Início"
+                  class="project-thumb-img active-img">
+                <img src="assets/projects/almada-2.png" alt="Almada Gastrobar - Cardápio" class="project-thumb-img">
+                <img src="assets/projects/almada-3.png" alt="Almada Gastrobar - Reservas" class="project-thumb-img">
+                <span class="project-badge">Gastrobar &amp; Gastronomia</span>
+                <div class="thumb-switcher">
+                  <button class="thumb-dot active" title="Início"></button>
+                  <button class="thumb-dot" title="Cardápio"></button>
+                  <button class="thumb-dot" title="Reservas"></button>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-item-title">Almada Gastrobar</h3>
+                <p class="project-item-desc">
+                  Site sofisticado com integração WhatsApp para reservas de mesas e acesso fácil ao cardápio digital.
+                </p>
+                <div class="project-item-footer">
+                  <span class="project-tech-pill">Agendamento &amp; WhatsApp</span>
+                  <a href="https://www.almadagastrobar.com/" target="_blank" class="project-btn-visit">
+                    <span>Visitar Site</span>
+                    <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Gerenciamento de Caçambas (Sistema Corporativo Sem Link Público) -->
+          <div class="carousel-slide">
+            <div class="project-item-card">
+              <div class="project-thumb-box">
+                <img src="assets/projects/cacambas-2.png" alt="Dashboard Caçambas" class="project-thumb-img active-img">
+                <img src="assets/projects/cacambas-3.png" alt="Ordens de Serviço e Relatórios"
+                  class="project-thumb-img">
+                <img src="assets/projects/cacambas-1.png" alt="Acesso Seguro" class="project-thumb-img">
+                <span class="project-badge">Gestão &amp; Logística</span>
+                <div class="thumb-switcher">
+                  <button class="thumb-dot active" title="Dashboard"></button>
+                  <button class="thumb-dot" title="Operações"></button>
+                  <button class="thumb-dot" title="Login"></button>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-item-title">Gerenciamento de Caçambas</h3>
+                <p class="project-item-desc">
+                  Sistema operacional com dashboard financeiro, controle de caçambas, ordens de serviço e app para
+                  motoristas.
+                </p>
+                <div class="project-item-footer">
+                  <span class="project-private-badge">
+                    <i data-lucide="lock" style="width: 12px; height: 12px;"></i> Sistema Corporativo
+                  </span>
+                  <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Gostei%20do%20sistema%20de%20gest%C3%A3o%20e%20ca%C3%A7ambas%20e%20quero%20um%20sistema%20sob%20medida."
+                    target="_blank" class="project-btn-visit">
+                    <span>Quero um Assim</span>
+                    <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: CodeGuild -->
+          <div class="carousel-slide">
+            <div class="project-item-card">
+              <div class="project-thumb-box">
+                <img src="assets/projects/codeguild-1.png" alt="CodeGuild Plataforma"
+                  class="project-thumb-img active-img">
+                <img src="assets/projects/codeguild-2.png" alt="CodeGuild Projetos" class="project-thumb-img">
+                <img src="assets/projects/codeguild-3.png" alt="CodeGuild Comunidade" class="project-thumb-img">
+                <span class="project-badge">Comunidade &amp; Startups</span>
+                <div class="thumb-switcher">
+                  <button class="thumb-dot active" title="Início"></button>
+                  <button class="thumb-dot" title="Projetos"></button>
+                  <button class="thumb-dot" title="Comunidade"></button>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-item-title">CodeGuild</h3>
+                <p class="project-item-desc">
+                  Plataforma colaborativa para conectar estudantes em projetos, hackathons e startups, integrada à API
+                  do GitHub.
+                </p>
+                <div class="project-item-footer">
+                  <span class="project-tech-pill">GitHub API &amp; Grupos</span>
+                  <a href="https://code-guild.onrender.com/paginas/inicio/index.html" target="_blank"
+                    class="project-btn-visit">
+                    <span>Visitar Plataforma</span>
+                    <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Sistema Paraíba (Sistema Fiscal Sem Link Público) -->
+          <div class="carousel-slide">
+            <div class="project-item-card">
+              <div class="project-thumb-box">
+                <img src="assets/projects/paraiba-2.png" alt="Dashboard Paraíba" class="project-thumb-img active-img">
+                <img src="assets/projects/paraiba-3.png" alt="Módulo Extração de NF-e" class="project-thumb-img">
+                <img src="assets/projects/paraiba-1.png" alt="Tela de Login" class="project-thumb-img">
+                <span class="project-badge">Gestão Fiscal &amp; NF-e</span>
+                <div class="thumb-switcher">
+                  <button class="thumb-dot active" title="Painel"></button>
+                  <button class="thumb-dot" title="Extração NF-e"></button>
+                  <button class="thumb-dot" title="Login"></button>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-item-title">Sistema Paraíba</h3>
+                <p class="project-item-desc">
+                  Servidor para extração automatizada de Notas Fiscais Eletrônicas (NF-e), cadastro de clientes e banco
+                  de dados seguro.
+                </p>
+                <div class="project-item-footer">
+                  <span class="project-private-badge">
+                    <i data-lucide="shield-check" style="width: 12px; height: 12px;"></i> Servidor Seguro
+                  </span>
+                  <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Preciso%20de%20um%20servidor%20ou%20sistema%20fiscal."
+                    target="_blank" class="project-btn-visit">
+                    <span>Quero um Assim</span>
+                    <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5: Portfólio Guilherme Silva -->
+          <div class="carousel-slide">
+            <div class="project-item-card">
+              <div class="project-thumb-box">
+                <img src="assets/projects/portifolio-1.png" alt="Portfólio Início" class="project-thumb-img active-img">
+                <img src="assets/projects/portifolio-2.png" alt="Habilidades e Tecnologias" class="project-thumb-img">
+                <img src="assets/projects/portifolio-3.png" alt="Projetos Desenvolvidos" class="project-thumb-img">
+                <span class="project-badge">Portfólio Pessoal</span>
+                <div class="thumb-switcher">
+                  <button class="thumb-dot active" title="Início"></button>
+                  <button class="thumb-dot" title="Skills"></button>
+                  <button class="thumb-dot" title="Projetos"></button>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-item-title">Portfólio Guilherme Silva</h3>
+                <p class="project-item-desc">
+                  Site pessoal para apresentação de competências, stack de tecnologia e projetos web com design moderno
+                  e fluido.
+                </p>
+                <div class="project-item-footer">
+                  <span class="project-tech-pill">Mobile First &amp; UI/UX</span>
+                  <a href="https://guilhermesilva7x.github.io/Meu-Portifolio-Guilherme/" target="_blank"
+                    class="project-btn-visit">
+                    <span>Visitar Portfólio</span>
+                    <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Indicadores de Pontos do Carrossel -->
+      <div class="carousel-dots-indicator" id="carouselDots">
+        <span class="c-dot active" data-slide="0"></span>
+        <span class="c-dot" data-slide="1"></span>
+        <span class="c-dot" data-slide="2"></span>
+        <span class="c-dot" data-slide="3"></span>
+        <span class="c-dot" data-slide="4"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       DIFERENCIAIS RÁPIDOS (PÍLULAS COMPACTAS)
+       ======================================================== -->
+  <section id="diferenciais" class="section-compact" style="padding-top: 0.5rem;">
+    <div class="container">
+      <div class="perks-row">
+        <div class="perk-box">
+          <i data-lucide="smartphone" class="perk-icon"></i>
+          <h4>100% Celular &amp; PC</h4>
+          <p>Navegação impecável e confortável em qualquer tela.</p>
+        </div>
+
+        <div class="perk-box">
+          <i data-lucide="zap" class="perk-icon"></i>
+          <h4>Abre em menos de 1.5s</h4>
+          <p>Carregamento imediato para não perder clientes.</p>
+        </div>
+
+        <div class="perk-box">
+          <i data-lucide="message-circle" class="perk-icon"></i>
+          <h4>Direto no WhatsApp</h4>
+          <p>Pedidos e agendamentos chegam no seu bolso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CHAMADA DE AÇÃO FINAL (CTA COMPACTO)
+       ======================================================== -->
+  <section class="section-compact" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="minimal-cta-box">
+        <h2 class="cta-title">Vamos criar o site da sua empresa?</h2>
+        <p class="cta-desc">
+          Fale diretamente com a Crona Web no WhatsApp. Conte sua ideia e começamos seu projeto sem burocracia.
+        </p>
+        <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20criar%20o%20meu%20site."
+          target="_blank" class="btn btn-whatsapp" style="font-size: 1.05rem; padding: 0.95rem 2.2rem;">
+          <i data-lucide="message-circle"></i>
+          <span>Conversar no WhatsApp Agora</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       PERGUNTAS FREQUENTES (FAQ DIRETO AO PONTO)
+       ======================================================== -->
+  <section id="faq" class="section-compact" style="padding-top: 1.5rem; padding-bottom: 3.5rem;">
+    <div class="container">
+      <div class="section-head" style="margin-bottom: 1.75rem;">
+        <span class="section-tag">Dúvidas Frequentes</span>
+        <h2 class="section-title">Perguntas <span class="silver-text">Rápidas</span></h2>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Quanto tempo demora para o site ficar pronto?</span>
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Em média de 4 a 7 dias úteis após o alinhamento das informações e fotos do seu negócio.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>O site funciona bem em qualquer aparelho?</span>
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! É 100% responsivo, funcionando perfeitamente em celulares (Android e iPhone) e computadores.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como faço para iniciar meu projeto?</span>
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Basta clicar no botão de WhatsApp. Conversamos sobre o seu projeto e cuidamos de toda a criação.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       RODAPÉ MINIMALISTA
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo-link">
+          <img src="assets/logo.jpg" alt="Logo Crona Web" class="logo-img" style="height: 36px;">
+          <div class="logo-text">
+            <span class="logo-title" style="font-size: 1.1rem;">CRONA</span>
+            <span class="logo-subtitle" style="font-size: 0.55rem;">WEB</span>
+          </div>
+        </a>
+        <p style="font-size: 0.85rem; color: var(--silver-400); margin-top: 0.4rem;">
+          Desenvolvimento de sites modernos e sistemas de agendamento online.
+        </p>
+      </div>
+
+      <div class="footer-actions">
+        <!-- Instagram Oficial -->
+        <a href="https://instagram.com/cronaweb" target="_blank" class="btn btn-glass"
+          style="font-size: 0.85rem; padding: 0.55rem 1.15rem;" aria-label="Instagram Crona Web">
+          <svg class="insta-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span>@cronaweb</span>
+        </a>
+
+        <!-- WhatsApp Oficial -->
+        <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Gostaria%20de%20um%20or%C3%A7amento."
+          target="_blank" class="btn btn-glass" style="font-size: 0.85rem; padding: 0.55rem 1.15rem;"
+          aria-label="WhatsApp Crona Web">
+          <i data-lucide="message-circle" style="width: 16px; height: 16px; color: #25d366;"></i>
+          <span>(64) 99251-7948</span>
+        </a>
+      </div>
+    </div>
+    <div class="container"
+      style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1.25rem; margin-top: 1.75rem; text-align: center; font-size: 0.76rem; color: var(--silver-500);">
+      &copy; 2026 Crona Web. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+    target="_blank" class="floating-whatsapp-btn" aria-label="Falar no WhatsApp">
+    <i data-lucide="message-circle"></i>
+    <span class="tooltip">Fale no WhatsApp</span>
+  </a>
+
+  <!-- Script Principal -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0e12"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </linearGradient>
+    <linearGradient id="metallicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="800" height="50" fill="#08090b" opacity="0.9"/>
+  <circle cx="30" cy="25" r="5" fill="#ef4444"/>
+  <circle cx="48" cy="25" r="5" fill="#eab308"/>
+  <circle cx="66" cy="25" r="5" fill="#22c55e"/>
+
+  <!-- Top bar search / url -->
+  <rect x="250" y="14" width="300" height="22" rx="11" fill="#171b22" stroke="#2a303c"/>
+  <text x="400" y="29" fill="#94a3b8" font-size="11" font-family="'Space Grotesk', sans-serif" text-anchor="middle">apexdetailer.com.br/agendamento</text>
+
+  <!-- Hero Content inside UI -->
+  <text x="60" y="110" fill="#38bdf8" font-size="12" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" letter-spacing="2">ESTÉTICA AUTOMOTIVA PREMIUM</text>
+  <text x="60" y="150" fill="#ffffff" font-size="28" font-family="'Space Grotesk', sans-serif" font-weight="bold">Agende sua Lavagem & Detalhamento</text>
+  <text x="60" y="178" fill="#94a3b8" font-size="14" font-family="'Plus Jakarta Sans', sans-serif">Escolha o seu veículo e horário com confirmação instantânea no WhatsApp.</text>
+
+  <!-- Vehicle selector cards -->
+  <g transform="translate(60, 205)">
+    <!-- Hatch -->
+    <rect x="0" y="0" width="150" height="95" rx="12" fill="#13171f" stroke="#334155" stroke-width="1.5"/>
+    <text x="75" y="45" fill="#e2e8f0" font-size="15" font-family="'Space Grotesk', sans-serif" font-weight="bold" text-anchor="middle">Hatch / Compacto</text>
+    <text x="75" y="70" fill="#38bdf8" font-size="13" font-family="'Space Grotesk', sans-serif" font-weight="bold" text-anchor="middle">a partir de R$ 60</text>
+    
+    <!-- Sedan / SUV Selected -->
+    <rect x="170" y="0" width="165" height="95" rx="12" fill="#1c2431" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="180" y="10" width="55" height="18" rx="4" fill="#38bdf8"/>
+    <text x="207" y="23" fill="#08090b" font-size="9" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" text-anchor="middle">POPULAR</text>
+    <text x="252" y="50" fill="#ffffff" font-size="15" font-family="'Space Grotesk', sans-serif" font-weight="bold" text-anchor="middle">SUV / Caminhonete</text>
+    <text x="252" y="75" fill="#38bdf8" font-size="13" font-family="'Space Grotesk', sans-serif" font-weight="bold" text-anchor="middle">a partir de R$ 90</text>
+
+    <!-- Detalhada VIP -->
+    <rect x="355" y="0" width="150" height="95" rx="12" fill="#13171f" stroke="#334155" stroke-width="1.5"/>
+    <text x="430" y="45" fill="#e2e8f0" font-size="15" font-family="'Space Grotesk', sans-serif" font-weight="bold" text-anchor="middle">Polimento & Vitrificação</text>
+    <text x="430" y="70" fill="#38bdf8" font-size="13" font-family="'Space Grotesk', sans-serif" font-weight="bold" text-anchor="middle">a partir de R$ 350</text>
+  </g>
+
+  <!-- Interactive Calendar / Time Slot Box -->
+  <g transform="translate(60, 325)">
+    <rect width="680" height="135" rx="14" fill="#10141b" stroke="#1e2430" stroke-width="1.5"/>
+    <text x="25" y="35" fill="#ffffff" font-size="15" font-family="'Space Grotesk', sans-serif" font-weight="bold">Selecione o Dia e Horário Disponível:</text>
+    
+    <!-- Date pills -->
+    <rect x="25" y="55" width="85" height="40" rx="8" fill="#1e2430" stroke="#334155"/>
+    <text x="67" y="74" fill="#94a3b8" font-size="11" text-anchor="middle">SEXTA</text>
+    <text x="67" y="88" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">14 NOV</text>
+
+    <rect x="120" y="55" width="85" height="40" rx="8" fill="#38bdf8"/>
+    <text x="162" y="74" fill="#08090b" font-size="11" font-weight="bold" text-anchor="middle">SÁBADO</text>
+    <text x="162" y="88" fill="#08090b" font-size="12" font-weight="bold" text-anchor="middle">15 NOV</text>
+
+    <!-- Time pills -->
+    <rect x="240" y="55" width="70" height="40" rx="8" fill="#1e2430"/>
+    <text x="275" y="80" fill="#e2e8f0" font-size="13" font-weight="bold" text-anchor="middle">09:00</text>
+
+    <rect x="320" y="55" width="70" height="40" rx="8" fill="#1e2430"/>
+    <text x="355" y="80" fill="#e2e8f0" font-size="13" font-weight="bold" text-anchor="middle">11:30</text>
+
+    <rect x="400" y="55" width="70" height="40" rx="8" fill="#1e2430"/>
+    <text x="435" y="80" fill="#e2e8f0" font-size="13" font-weight="bold" text-anchor="middle">14:00</text>
+
+    <!-- Confirm Button -->
+    <rect x="495" y="55" width="165" height="40" rx="8" fill="url(#cyanGrad)"/>
+    <text x="577" y="80" fill="#ffffff" font-size="13" font-family="'Space Grotesk', sans-serif" font-weight="bold" text-anchor="middle">Confirmar Vaga ➔</text>
+  </g>
+</svg>
+

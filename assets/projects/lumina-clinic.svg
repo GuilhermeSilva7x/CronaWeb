@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0e14"/>
+      <stop offset="100%" stop-color="#06070a"/>
+    </linearGradient>
+    <linearGradient id="silverRose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad5)"/>
+  <rect x="0" y="0" width="800" height="50" fill="#07090d" opacity="0.9"/>
+  <circle cx="30" cy="25" r="5" fill="#ef4444"/>
+  <circle cx="48" cy="25" r="5" fill="#eab308"/>
+  <circle cx="66" cy="25" r="5" fill="#22c55e"/>
+
+  <rect x="250" y="14" width="300" height="22" rx="11" fill="#131720" stroke="#232938"/>
+  <text x="400" y="29" fill="#94a3b8" font-size="11" font-family="'Space Grotesk', sans-serif" text-anchor="middle">draluminaclinic.com.br</text>
+
+  <!-- Content -->
+  <text x="60" y="110" fill="#cbd5e1" font-size="12" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" letter-spacing="3">CLÍNICA MÉDICA & DERMATOLOGIA</text>
+  <text x="60" y="155" fill="#ffffff" font-size="28" font-family="'Space Grotesk', sans-serif" font-weight="bold">Harmonização & Rejuvenescimento Facial</text>
+  <text x="60" y="185" fill="#94a3b8" font-size="14">Tecnologia avançada e procedimentos personalizados para sua beleza natural.</text>
+
+  <g transform="translate(60, 215)">
+    <!-- Service 1 -->
+    <rect x="0" y="0" width="210" height="130" rx="12" fill="#121620" stroke="#262f3e"/>
+    <text x="20" y="35" fill="#ffffff" font-size="16" font-family="'Space Grotesk', sans-serif" font-weight="bold">Bioestimuladores</text>
+    <text x="20" y="55" fill="#94a3b8" font-size="12">Estímulo profundo de colágeno e sustentação.</text>
+    <rect x="20" y="85" width="170" height="28" rx="6" fill="#1b2230" stroke="#333f52"/>
+    <text x="105" y="103" fill="#cbd5e1" font-size="11" font-weight="bold" text-anchor="middle">Agendar Avaliação</text>
+
+    <!-- Service 2 -->
+    <rect x="235" y="0" width="210" height="130" rx="12" fill="#121620" stroke="#262f3e"/>
+    <text x="255" y="35" fill="#ffffff" font-size="16" font-family="'Space Grotesk', sans-serif" font-weight="bold">Preenchimento Labial</text>
+    <text x="255" y="55" fill="#94a3b8" font-size="12">Contorno, volume e hidratação com ácido hialurônico.</text>
+    <rect x="255" y="85" width="170" height="28" rx="6" fill="#1b2230" stroke="#333f52"/>
+    <text x="340" y="103" fill="#cbd5e1" font-size="11" font-weight="bold" text-anchor="middle">Agendar Avaliação</text>
+
+    <!-- Service 3 -->
+    <rect x="470" y="0" width="210" height="130" rx="12" fill="#121620" stroke="#262f3e"/>
+    <text x="490" y="35" fill="#ffffff" font-size="16" font-family="'Space Grotesk', sans-serif" font-weight="bold">Laser & Peeling Químico</text>
+    <text x="490" y="55" fill="#94a3b8" font-size="12">Uniformização do tom e clareamento de manchas.</text>
+    <rect x="490" y="85" width="170" height="28" rx="6" fill="#1b2230" stroke="#333f52"/>
+    <text x="575" y="103" fill="#cbd5e1" font-size="11" font-weight="bold" text-anchor="middle">Agendar Avaliação</text>
+  </g>
+
+  <!-- Trust stats -->
+  <g transform="translate(60, 375)">
+    <rect width="680" height="80" rx="12" fill="#0f131a" stroke="#1d232e"/>
+    <text x="40" y="35" fill="#fff" font-size="20" font-family="'Space Grotesk', sans-serif" font-weight="bold">+2.500</text>
+    <text x="40" y="55" fill="#94a3b8" font-size="12">Pacientes Atendidas</text>
+
+    <text x="270" y="35" fill="#fff" font-size="20" font-family="'Space Grotesk', sans-serif" font-weight="bold">5.0 Estrelas</text>
+    <text x="270" y="55" fill="#94a3b8" font-size="12">Classificação Máxima Google</text>
+
+    <rect x="480" y="22" width="170" height="36" rx="8" fill="url(#silverRose)"/>
+    <text x="565" y="45" fill="#090b0e" font-size="12" font-family="'Space Grotesk', sans-serif" font-weight="bold" text-anchor="middle">Conversar no WhatsApp ➔</text>
+  </g>
+</svg>
+

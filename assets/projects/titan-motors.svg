@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090b0e"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad4)"/>
+  <rect x="0" y="0" width="800" height="50" fill="#07080b" opacity="0.9"/>
+  <circle cx="30" cy="25" r="5" fill="#ef4444"/>
+  <circle cx="48" cy="25" r="5" fill="#eab308"/>
+  <circle cx="66" cy="25" r="5" fill="#22c55e"/>
+
+  <rect x="250" y="14" width="300" height="22" rx="11" fill="#141820" stroke="#252b36"/>
+  <text x="400" y="29" fill="#94a3b8" font-size="11" font-family="'Space Grotesk', sans-serif" text-anchor="middle">titanmotorsveiculos.com.br</text>
+
+  <!-- Title & Filters Bar -->
+  <text x="60" y="105" fill="#ffffff" font-size="22" font-family="'Space Grotesk', sans-serif" font-weight="bold">ESTOQUE EXCLUSIVO • TITAN MOTORS</text>
+  
+  <g transform="translate(60, 125)">
+    <!-- Search / Filter pills -->
+    <rect x="0" y="0" width="160" height="38" rx="8" fill="#141822" stroke="#2c3545"/>
+    <text x="15" y="24" fill="#cbd5e1" font-size="12">Marca: Todas ▼</text>
+
+    <rect x="175" y="0" width="160" height="38" rx="8" fill="#141822" stroke="#2c3545"/>
+    <text x="190" y="24" fill="#cbd5e1" font-size="12">Ano: 2022 a 2025 ▼</text>
+
+    <rect x="350" y="0" width="160" height="38" rx="8" fill="#141822" stroke="#2c3545"/>
+    <text x="365" y="24" fill="#cbd5e1" font-size="12">Preço: Até R$ 350k ▼</text>
+
+    <rect x="525" y="0" width="155" height="38" rx="8" fill="#38bdf8"/>
+    <text x="602" y="24" fill="#090b0e" font-size="12" font-weight="bold" text-anchor="middle">Filtrar 48 Carros</text>
+  </g>
+
+  <!-- Car Cards Grid -->
+  <g transform="translate(60, 185)">
+    <!-- Car 1 -->
+    <rect x="0" y="0" width="330" height="260" rx="14" fill="#10141c" stroke="#232a37"/>
+    <rect x="15" y="15" width="300" height="135" rx="8" fill="#19202c"/>
+    <text x="165" y="85" fill="#475569" font-size="14" font-weight="bold" text-anchor="middle">[FOTO EM ALTA RESOLUÇÃO DO VEÍCULO]</text>
+    <rect x="25" y="25" width="70" height="20" rx="4" fill="#22c55e"/>
+    <text x="60" y="38" fill="#000" font-size="10" font-weight="bold" text-anchor="middle">ÚNICO DONO</text>
+    <text x="15" y="175" fill="#fff" font-size="16" font-family="'Space Grotesk', sans-serif" font-weight="bold">BMW 320i M Sport 2.0 Turbo</text>
+    <text x="15" y="195" fill="#94a3b8" font-size="12">2023/2023 • 18.000 km • Câmbio Automático 8M</text>
+    <text x="15" y="228" fill="#38bdf8" font-size="18" font-family="'Space Grotesk', sans-serif" font-weight="bold">R$ 319.900</text>
+    <rect x="200" y="210" width="115" height="32" rx="6" fill="#1e2634" stroke="#38bdf8"/>
+    <text x="257" y="230" fill="#38bdf8" font-size="11" font-weight="bold" text-anchor="middle">Ver Proposta ➔</text>
+
+    <!-- Car 2 -->
+    <rect x="350" y="0" width="330" height="260" rx="14" fill="#10141c" stroke="#232a37"/>
+    <rect x="365" y="15" width="300" height="135" rx="8" fill="#19202c"/>
+    <text x="515" y="85" fill="#475569" font-size="14" font-weight="bold" text-anchor="middle">[FOTO EM ALTA RESOLUÇÃO DO VEÍCULO]</text>
+    <rect x="375" y="25" width="75" height="20" rx="4" fill="#38bdf8"/>
+    <text x="412" y="38" fill="#000" font-size="10" font-weight="bold" text-anchor="middle">IPVA PAGO</text>
+    <text x="365" y="175" fill="#fff" font-size="16" font-family="'Space Grotesk', sans-serif" font-weight="bold">Porsche Macan 2.0 T</text>
+    <text x="365" y="195" fill="#94a3b8" font-size="12">2022/2022 • 26.500 km • Teto Panorâmico</text>
+    <text x="365" y="228" fill="#38bdf8" font-size="18" font-family="'Space Grotesk', sans-serif" font-weight="bold">R$ 448.000</text>
+    <rect x="550" y="210" width="115" height="32" rx="6" fill="#1e2634" stroke="#38bdf8"/>
+    <text x="607" y="230" fill="#38bdf8" font-size="11" font-weight="bold" text-anchor="middle">Ver Proposta ➔</text>
+  </g>
+</svg>
+

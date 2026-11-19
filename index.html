@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CronaWeb</title>
+  <title>CronaWeb | Sites Modernos e Agendamentos Online</title>
   <meta name="description"
-    content="Desenvolvimento de sites profissionais, rápidos e minimalistas para lojas, lava-jatos, barbearias e empresas.">
+    content="Desenvolvimento de sites profissionais, rápidos e modernos para lojas, lava-jatos, barbearias e empresas.">
   <meta name="theme-color" content="#060709">
 
   <!-- Compartilhamento Social (Open Graph) -->
-
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cronaweb.vercel.app/">
   <meta property="og:title" content="CronaWeb">
@@ -28,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap"
     rel="stylesheet">
 
   <!-- Ícones Lucide -->
@@ -41,134 +40,247 @@
 <body>
 
   <!-- ========================================================
-       EFEITOS DE ILUMINAÇÃO DE FUNDO (AMBIENT GLOW)
+       BARRA DE PROGRESSO DE LEITURA (SCROLL PROGRESS)
+       ======================================================== -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- ========================================================
+       CANVAS 3D GEOMÉTRICO INTERATIVO DE FUNDO
+       ======================================================== -->
+  <canvas id="bg3d-canvas" class="bg3d-canvas"></canvas>
+
+  <!-- ========================================================
+       EFEITOS DE ILUMINAÇÃO DE FUNDO (AMBIENT GLOW VIVO)
        ======================================================== -->
   <div class="ambient-glow glow-top"></div>
   <div class="ambient-glow glow-bottom"></div>
 
   <!-- ========================================================
-       CABEÇALHO & NAVEGAÇÃO PRINCIPAL
+       CABEÇALHO FLUTUANTE (LIMPO & SEM "PROJETOS ABERTOS")
        ======================================================== -->
-  <header class="site-header">
-    <div class="container nav-wrapper">
-      <!-- Logotipo com Animação Flutuante -->
-      <a href="#inicio" class="logo-link">
-        <img src="assets/logo.jpg" alt="Logo Crona Web" class="logo-img">
-        <div class="logo-text">
-          <span class="logo-title">CRONA</span>
-          <span class="logo-subtitle">WEB</span>
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="nav-island">
+        <!-- Logotipo com Animação Flutuante -->
+        <a href="#inicio" class="logo-link">
+          <img src="assets/logo.jpg" alt="Logo Crona Web" class="logo-img">
+          <div class="logo-text">
+            <span class="logo-title">CRONA</span>
+            <span class="logo-subtitle">WEB</span>
+          </div>
+        </a>
+
+        <!-- Menu de Links Rápido -->
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#solucoes">Soluções</a></li>
+            <li><a href="#faq">Dúvidas</a></li>
+          </ul>
+        </nav>
+
+        <!-- Botões de Ação do Topo -->
+        <div class="nav-actions">
+          <!-- Instagram Oficial -->
+          <a href="https://instagram.com/cronaweb" target="_blank" class="btn-icon-glass"
+            aria-label="Instagram @cronaweb" title="Instagram @cronaweb">
+            <svg class="insta-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+
+          <!-- WhatsApp Oficial -->
+          <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+            target="_blank" class="btn btn-whatsapp-header">
+            <i data-lucide="message-square"></i>
+            <span>Orçamento</span>
+          </a>
+
+          <!-- Botão Menu Mobile -->
+          <button class="mobile-toggle" aria-label="Abrir Menu">
+            <i data-lucide="menu"></i>
+          </button>
         </div>
-      </a>
-
-      <!-- Menu de Links -->
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#solucoes">Soluções</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#faq">Dúvidas</a></li>
-        </ul>
-      </nav>
-
-      <!-- Botões de Ação do Topo -->
-      <div class="nav-actions">
-        <!-- Instagram Oficial com SVG Nativo -->
-        <a href="https://instagram.com/cronaweb" target="_blank" class="btn btn-glass btn-nav-insta"
-          aria-label="Instagram @cronaweb">
-          <svg class="insta-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
-          <span>@cronaweb</span>
-        </a>
-
-        <!-- WhatsApp Oficial -->
-        <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
-          target="_blank" class="btn btn-metallic btn-nav">
-          <i data-lucide="message-square"></i>
-          <span>WhatsApp</span>
-        </a>
-
-        <!-- Botão Menu Mobile -->
-        <button class="mobile-toggle" aria-label="Abrir Menu">
-          <i data-lucide="menu"></i>
-        </button>
       </div>
     </div>
   </header>
 
   <!-- ========================================================
-       SEÇÃO HERO (DESTAQUE PRINCIPAL)
+       SEÇÃO HERO (DIRETO AO PONTO COM CORES VIVAS)
        ======================================================== -->
   <section id="inicio" class="hero-section">
     <div class="container hero-content">
       <div class="hero-text-area">
         <div class="hero-badge">
           <span class="badge-dot"></span>
-          <span>Desenvolvimento Web Exclusivo</span>
+          <span>Desenvolvimento Web &bull; Rápido &amp; Moderno</span>
         </div>
 
         <h1 class="hero-title">
-          Sites modernos que <span class="silver-text-shine">geram clientes</span> todos os dias.
+          Sites modernos que <span class="cyan-text-gradient">geram clientes</span> todos os dias.
         </h1>
 
         <p class="hero-description">
-          Criamos sites rápidos e minimalistas sob medida para <strong>lojas, lava-jatos, barbearias e
-            empresas</strong>. Design profissional e direto no celular e no computador.
+          Criamos sites rápidos sob medida para <strong>lojas, lava-jatos, barbearias e empresas</strong>. Agendamentos
+          e pedidos chegam direto no seu WhatsApp.
         </p>
 
         <div class="hero-buttons">
           <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Quero%20criar%20um%20site%20para%20o%20meu%20neg%C3%B3cio."
-            target="_blank" class="btn btn-whatsapp">
+            target="_blank" class="btn btn-whatsapp-hero">
             <i data-lucide="message-circle"></i>
-            <span>Falar no WhatsApp</span>
+            <span>Falar no WhatsApp Agora</span>
           </a>
-          <a href="#projetos" class="btn btn-glass">
-            <span>Ver Projetos</span>
+          <a href="#projetos" class="btn btn-glass-cyan">
+            <span>Ver Projetos Reais</span>
             <i data-lucide="arrow-down" style="width: 15px; height: 15px;"></i>
           </a>
         </div>
       </div>
 
-      <!-- Card Visual Minimalista de Apresentação -->
+      <!-- Vitrine 3D Espacial e Iluminada -->
       <div class="hero-visual">
-        <div class="showcase-glass-card">
-          <div class="card-header-bar">
-            <div class="card-dots">
-              <span></span><span></span><span></span>
-            </div>
-            <span class="card-badge-status">
-              <i data-lucide="sparkles"
-                style="width: 12px; height: 12px; display: inline-block; vertical-align: middle;"></i> Crona Web
-            </span>
-          </div>
+        <div class="stage-3d" id="heroStage3D">
+          <div class="stage-ambient-radial"></div>
 
-          <div class="preview-mini-list">
-            <div class="preview-item">
-              <div class="item-icon"><i data-lucide="car"></i></div>
-              <div class="item-text">
-                <strong>Lava-Jatos &amp; Barbearias</strong>
-                <span>Agendamentos automáticos sem filas</span>
+          <div class="rig-3d" id="heroRig3D">
+            <div class="shadow-contact-3d"></div>
+
+            <!-- Moldura do Monitor 3D Pro -->
+            <div class="display-3d-frame">
+              <div class="glare-surface" id="heroGlare"></div>
+
+              <div class="display-header">
+                <div class="display-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="display-address-bar">
+                  <i data-lucide="lock" class="address-lock-icon"></i>
+                  <span>cronaweb.com.br</span>
+                </div>
+                <div class="display-live-status">
+                  <span class="pulse-live-dot"></span>
+                  <span>ONLINE</span>
+                </div>
+              </div>
+
+              <div class="display-screen-content">
+                <div class="screen-subnav">
+                  <div class="subnav-brand">
+                    <span class="brand-accent-box">CW</span>
+                    <span class="brand-name">Crona Web Studio</span>
+                  </div>
+                  <div class="subnav-stats">
+                    <span class="stat-pill highlight"><i data-lucide="zap"></i> 0.6s Speed</span>
+                  </div>
+                </div>
+
+                <div class="screen-chart-area">
+                  <div class="chart-header">
+                    <div>
+                      <span class="chart-tag">Resultado para seu Negócio</span>
+                      <h4 class="chart-value">+280% <span class="chart-badge-up"><i data-lucide="trending-up"></i>
+                          Clientes</span></h4>
+                    </div>
+                  </div>
+
+                  <div class="chart-visual">
+                    <svg viewBox="0 0 320 85" class="chart-svg" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.45" />
+                          <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.0" />
+                        </linearGradient>
+                      </defs>
+                      <path d="M0,72 Q45,62 85,45 T170,32 T245,14 T320,4 L320,85 L0,85 Z" fill="url(#chartGradient)" />
+                      <path d="M0,72 Q45,62 85,45 T170,32 T245,14 T320,4" fill="none" stroke="#00f0ff"
+                        stroke-width="2.5" stroke-linecap="round" />
+                      <circle cx="245" cy="14" r="4" fill="#ffffff" stroke="#00f0ff" stroke-width="2"
+                        class="chart-point-pulse" />
+                      <circle cx="320" cy="4" r="4.5" fill="#00f0ff" class="chart-point-pulse" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="screen-cards-grid">
+                  <div class="screen-mini-card">
+                    <div class="mini-icon cyan"><i data-lucide="users"></i></div>
+                    <div class="mini-info">
+                      <span class="mini-label">Mais Visitantes</span>
+                      <strong class="mini-num">Atraídos no Celular</strong>
+                    </div>
+                  </div>
+                  <div class="screen-mini-card">
+                    <div class="mini-icon green"><i data-lucide="check-circle-2"></i></div>
+                    <div class="mini-info">
+                      <span class="mini-label">Agendamentos</span>
+                      <strong class="mini-num">100% no WhatsApp</strong>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="preview-item">
-              <div class="item-icon"><i data-lucide="shopping-bag"></i></div>
-              <div class="item-text">
-                <strong>Lojas &amp; Catálogos</strong>
-                <span>Vendas online com Pix e Cartão</span>
+            <!-- SMARTPHONE 3D FLUTUANTE (Profundidade Espacial Z: +110px) -->
+            <div class="phone-3d-mockup" id="heroPhone3D">
+              <div class="phone-3d-inner">
+                <div class="phone-island-notch"></div>
+                <div class="phone-screen-ui">
+                  <div class="phone-header-row">
+                    <span class="phone-logo-badge">CW</span>
+                    <span class="phone-time-chip">10:30</span>
+                  </div>
+                  <div class="phone-banner">
+                    <span class="phone-live-dot"></span>
+                    <strong>Agendamento 24h</strong>
+                  </div>
+                  <div class="phone-booking-card">
+                    <div class="booking-service-title">Lavagem Completa</div>
+                    <div class="booking-time-badge">Hoje às 14:00</div>
+                    <div class="booking-btn-simulated">
+                      <i data-lucide="message-circle"></i>
+                      <span>WhatsApp Conectado</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="preview-item">
-              <div class="item-icon"><i data-lucide="globe"></i></div>
-              <div class="item-text">
-                <strong>Sites Institucionais</strong>
-                <span>Presença digital de alta credibilidade</span>
+            <!-- Card Flutuante 1: Speed 99/100 -->
+            <div class="float-3d-card card-speed" id="floatCard1">
+              <div class="speed-gauge">
+                <svg viewBox="0 0 44 44" class="gauge-svg">
+                  <circle cx="22" cy="22" r="18" class="gauge-bg"></circle>
+                  <circle cx="22" cy="22" r="18" class="gauge-bar"></circle>
+                </svg>
+                <span class="gauge-score">99</span>
+              </div>
+              <div class="speed-text">
+                <strong>Super Rápido</strong>
+                <span>Abre em menos de 1s</span>
               </div>
             </div>
+
+            <!-- Card Flutuante 2: Notificação WhatsApp -->
+            <div class="float-3d-card card-booking" id="floatCard2">
+              <div class="booking-icon-box">
+                <i data-lucide="calendar-check"></i>
+                <span class="booking-online-ping"></span>
+              </div>
+              <div class="booking-details">
+                <div class="booking-title-row">
+                  <strong>Novo Agendamento</strong>
+                </div>
+                <span class="booking-sub">Cai direto no seu WhatsApp</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -176,60 +288,16 @@
   </section>
 
   <!-- ========================================================
-       SEÇÃO SOLUÇÕES (ENXUTA, COMPACTA & SEM POLUIÇÃO VISUAL)
-       ======================================================== -->
-  <section id="solucoes" class="section-compact">
-    <div class="container">
-      <div class="compact-solutions-bar">
-        <!-- Item 1: Agendamentos -->
-        <div class="compact-sol-item">
-          <div class="compact-sol-icon">
-            <i data-lucide="calendar-check"></i>
-          </div>
-          <div>
-            <h3 class="compact-sol-title">Agendamentos Online</h3>
-            <p class="compact-sol-text">Para lava-jatos, barbearias e clínicas. Seu cliente escolhe o dia e horário
-              livre direto pelo celular.</p>
-          </div>
-        </div>
-
-        <!-- Item 2: Lojas & Catálogos -->
-        <div class="compact-sol-item">
-          <div class="compact-sol-icon">
-            <i data-lucide="shopping-bag"></i>
-          </div>
-          <div>
-            <h3 class="compact-sol-title">Lojas Virtuais &amp; Catálogos</h3>
-            <p class="compact-sol-text">Venda seus produtos 24h por dia com catálogo limpo, cálculo de frete e Pix
-              instantâneo.</p>
-          </div>
-        </div>
-
-        <!-- Item 3: Sites Institucionais -->
-        <div class="compact-sol-item">
-          <div class="compact-sol-icon">
-            <i data-lucide="globe"></i>
-          </div>
-          <div>
-            <h3 class="compact-sol-title">Sites Institucionais</h3>
-            <p class="compact-sol-text">Páginas de alto padrão para posicionar sua empresa com autoridade e converter em
-              anúncios.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================
-       SEÇÃO PROJETOS (CARROSSEL INFINITO COM 3 TELAS REAIS CADA)
+       SEÇÃO PROJETOS (FÁCIL ACESSO: CLIENTE VÊ NA HORA!)
        ======================================================== -->
   <section id="projetos" class="section">
     <div class="container">
       <div class="section-head-carousel">
         <div>
           <span class="section-tag">Portfólio em Ação</span>
-          <h2 class="section-title">Projetos <span class="silver-text">Desenvolvidos</span></h2>
-          <p class="section-subtitle">Passe para o lado ou clique nos pontinhos para ver as telas de cada site.</p>
+          <h2 class="section-title">Sites <span class="cyan-text-gradient">Desenvolvidos</span></h2>
+          <p class="section-subtitle">Veja na prática os sites criados pela Crona Web. Passe para o lado ou clique nos
+            botões.</p>
         </div>
         <!-- Controles de Navegação do Carrossel -->
         <div class="carousel-nav-buttons">
@@ -248,13 +316,13 @@
 
           <!-- Slide 1: Almada Gastrobar -->
           <div class="carousel-slide">
-            <div class="project-item-card">
+            <div class="project-item-card" data-spotlight>
               <div class="project-thumb-box">
                 <img src="assets/projects/almada-1.png" alt="Almada Gastrobar - Início"
                   class="project-thumb-img active-img">
                 <img src="assets/projects/almada-2.png" alt="Almada Gastrobar - Cardápio" class="project-thumb-img">
                 <img src="assets/projects/almada-3.png" alt="Almada Gastrobar - Reservas" class="project-thumb-img">
-                <span class="project-badge">Gastrobar &amp; Gastronomia</span>
+                <span class="project-badge">Gastrobar &amp; Reservas</span>
                 <div class="thumb-switcher">
                   <button class="thumb-dot active" title="Início"></button>
                   <button class="thumb-dot" title="Cardápio"></button>
@@ -264,10 +332,10 @@
               <div class="project-body">
                 <h3 class="project-item-title">Almada Gastrobar</h3>
                 <p class="project-item-desc">
-                  Site sofisticado com integração WhatsApp para reservas de mesas e acesso fácil ao cardápio digital.
+                  Site sofisticado com cardápio digital e botão para reservas de mesas direto pelo WhatsApp.
                 </p>
                 <div class="project-item-footer">
-                  <span class="project-tech-pill">Agendamento &amp; WhatsApp</span>
+                  <span class="project-tech-pill">Reservas &amp; Cardápio</span>
                   <a href="https://www.almadagastrobar.com/" target="_blank" class="project-btn-visit">
                     <span>Visitar Site</span>
                     <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
@@ -277,9 +345,9 @@
             </div>
           </div>
 
-          <!-- Slide 2: Gerenciamento de Caçambas (Sistema Corporativo Sem Link Público) -->
+          <!-- Slide 2: Gerenciamento de Caçambas -->
           <div class="carousel-slide">
-            <div class="project-item-card">
+            <div class="project-item-card" data-spotlight>
               <div class="project-thumb-box">
                 <img src="assets/projects/cacambas-2.png" alt="Dashboard Caçambas" class="project-thumb-img active-img">
                 <img src="assets/projects/cacambas-3.png" alt="Ordens de Serviço e Relatórios"
@@ -314,7 +382,7 @@
 
           <!-- Slide 3: CodeGuild -->
           <div class="carousel-slide">
-            <div class="project-item-card">
+            <div class="project-item-card" data-spotlight>
               <div class="project-thumb-box">
                 <img src="assets/projects/codeguild-1.png" alt="CodeGuild Plataforma"
                   class="project-thumb-img active-img">
@@ -334,7 +402,7 @@
                   do GitHub.
                 </p>
                 <div class="project-item-footer">
-                  <span class="project-tech-pill">GitHub API &amp; Grupos</span>
+                  <span class="project-tech-pill">GitHub &amp; Projetos</span>
                   <a href="https://code-guild.onrender.com/paginas/inicio/index.html" target="_blank"
                     class="project-btn-visit">
                     <span>Visitar Plataforma</span>
@@ -345,9 +413,9 @@
             </div>
           </div>
 
-          <!-- Slide 4: Sistema Paraíba (Sistema Fiscal Sem Link Público) -->
+          <!-- Slide 4: Sistema Paraíba -->
           <div class="carousel-slide">
-            <div class="project-item-card">
+            <div class="project-item-card" data-spotlight>
               <div class="project-thumb-box">
                 <img src="assets/projects/paraiba-2.png" alt="Dashboard Paraíba" class="project-thumb-img active-img">
                 <img src="assets/projects/paraiba-3.png" alt="Módulo Extração de NF-e" class="project-thumb-img">
@@ -360,10 +428,10 @@
                 </div>
               </div>
               <div class="project-body">
-                <h3 class="project-item-title">Extrator de nota Fiscais</h3>
+                <h3 class="project-item-title">Extrator de Notas Fiscais</h3>
                 <p class="project-item-desc">
-                  Servidor para extração automatizada de Notas Fiscais Eletrônicas (NF-e), cadastro de clientes e banco
-                  de dados seguro.
+                  Servidor para extração automatizada de Notas Fiscais (NF-e), cadastro de clientes e banco de dados
+                  seguro.
                 </p>
                 <div class="project-item-footer">
                   <span class="project-private-badge">
@@ -381,7 +449,7 @@
 
           <!-- Slide 5: Portfólio Guilherme Silva -->
           <div class="carousel-slide">
-            <div class="project-item-card">
+            <div class="project-item-card" data-spotlight>
               <div class="project-thumb-box">
                 <img src="assets/projects/portifolio-1.png" alt="Portfólio Início" class="project-thumb-img active-img">
                 <img src="assets/projects/portifolio-2.png" alt="Habilidades e Tecnologias" class="project-thumb-img">
@@ -426,59 +494,137 @@
   </section>
 
   <!-- ========================================================
-       DIFERENCIAIS RÁPIDOS (PÍLULAS COMPACTAS)
+       SEÇÃO SOLUÇÕES (ENXUTA, SIMPLES & DE FÁCIL ENTENDIMENTO)
        ======================================================== -->
-  <section id="diferenciais" class="section-compact" style="padding-top: 0.5rem;">
+  <section id="solucoes" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">O que Desenvolvemos</span>
+        <h2 class="section-title">Soluções <span class="cyan-text-gradient">Práticas</span></h2>
+        <p class="section-subtitle">Escolha o formato ideal para o momento da sua empresa.</p>
+      </div>
+
+      <div class="simple-solutions-grid">
+        <!-- Item 1: Agendamentos -->
+        <div class="simple-sol-card" data-spotlight>
+          <div class="sol-icon-box cyan">
+            <i data-lucide="calendar-check"></i>
+          </div>
+          <h3 class="sol-card-title">Agendamentos Online</h3>
+          <p class="sol-card-desc">
+            Para <strong>lava-jatos, barbearias e clínicas</strong>. O seu cliente escolhe o dia e o horário livre
+            sozinho pelo celular. Chega pronto no seu WhatsApp.
+          </p>
+          <div class="sol-card-footer">
+            <span class="sol-card-pill">Sem filas e sem perda de clientes</span>
+            <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Tenho%20interesse%20em%20um%20site%20com%20Agendamentos%20Online."
+              target="_blank" class="sol-btn-order">
+              <span>Pedir Orçamento</span>
+              <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 2: Lojas Virtuais & Catálogos -->
+        <div class="simple-sol-card" data-spotlight>
+          <div class="sol-icon-box green">
+            <i data-lucide="shopping-bag"></i>
+          </div>
+          <h3 class="sol-card-title">Lojas &amp; Catálogos Digitais</h3>
+          <p class="sol-card-desc">
+            Venda seus produtos 24 horas por dia com catálogo limpo, cálculo automático de frete e pagamento instantâneo
+            com Pix e Cartão.
+          </p>
+          <div class="sol-card-footer">
+            <span class="sol-card-pill">Venda direta sem taxas abusivas</span>
+            <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Quero%20uma%20Loja%20Virtual%20ou%20Cat%C3%A1logo%20Digital."
+              target="_blank" class="sol-btn-order">
+              <span>Pedir Orçamento</span>
+              <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 3: Sites Institucionais & Sistemas -->
+        <div class="simple-sol-card" data-spotlight>
+          <div class="sol-icon-box blue">
+            <i data-lucide="globe"></i>
+          </div>
+          <h3 class="sol-card-title">Sites para Empresas</h3>
+          <p class="sol-card-desc">
+            Páginas de alto padrão para posicionar sua marca com credibilidade, preparadas para anúncios no Google e
+            captação de clientes qualificados.
+          </p>
+          <div class="sol-card-footer">
+            <span class="sol-card-pill">Autoridade máxima no mercado</span>
+            <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Gostaria%20de%20um%20Site%20Institucional%20para%20minha%20empresa."
+              target="_blank" class="sol-btn-order">
+              <span>Pedir Orçamento</span>
+              <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       DIFERENCIAIS RÁPIDOS (3 PONTOS ESSENCIAIS)
+       ======================================================== -->
+  <section id="diferenciais" class="section-compact">
     <div class="container">
       <div class="perks-row">
-        <div class="perk-box">
-          <i data-lucide="smartphone" class="perk-icon"></i>
-          <h4>100% Celular &amp; PC</h4>
-          <p>Navegação impecável e confortável em qualquer tela.</p>
+        <div class="perk-box" data-spotlight>
+          <div class="perk-icon-wrap"><i data-lucide="smartphone"></i></div>
+          <h4>100% Celular e PC</h4>
+          <p>Navegação impecável e confortável em qualquer aparelho (Android e iPhone).</p>
         </div>
 
-        <div class="perk-box">
-          <i data-lucide="zap" class="perk-icon"></i>
-          <h4>Abre em menos de 1.5s</h4>
-          <p>Carregamento imediato para não perder clientes.</p>
+        <div class="perk-box" data-spotlight>
+          <div class="perk-icon-wrap"><i data-lucide="zap"></i></div>
+          <h4>Abre em menos de 1s</h4>
+          <p>Carregamento imediato para você não perder clientes pela lentidão.</p>
         </div>
 
-        <div class="perk-box">
-          <i data-lucide="message-circle" class="perk-icon"></i>
-          <h4>Direto no WhatsApp</h4>
-          <p>Pedidos e agendamentos chegam no seu bolso.</p>
+        <div class="perk-box" data-spotlight>
+          <div class="perk-icon-wrap"><i data-lucide="message-circle"></i></div>
+          <h4>Direto no seu WhatsApp</h4>
+          <p>Pedidos, agendamentos e orçamentos caem diretamente na sua conversa.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========================================================
-       CHAMADA DE AÇÃO FINAL (CTA COMPACTO)
+       CHAMADA DE AÇÃO FINAL (CTA DIRETO AO PONTO)
        ======================================================== -->
-  <section class="section-compact" style="padding-top: 2rem;">
+  <section class="section" style="padding-top: 1.5rem;">
     <div class="container">
-      <div class="minimal-cta-box">
-        <h2 class="cta-title">Vamos criar o site da sua empresa?</h2>
-        <p class="cta-desc">
-          Fale diretamente com a Crona Web no WhatsApp. Conte sua ideia e começamos seu projeto sem burocracia.
-        </p>
-        <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20criar%20o%20meu%20site."
-          target="_blank" class="btn btn-whatsapp" style="font-size: 1.05rem; padding: 0.95rem 2.2rem;">
-          <i data-lucide="message-circle"></i>
-          <span>Conversar no WhatsApp Agora</span>
-        </a>
+      <div class="clean-cta-box" data-spotlight>
+        <div class="cta-glow-effect"></div>
+        <div class="cta-content">
+          <h2 class="cta-title">Vamos colocar o site da sua empresa no ar?</h2>
+          <p class="cta-desc">
+            Fale diretamente com a Crona Web no WhatsApp. Conte sua ideia e começamos seu projeto sem burocracia.
+          </p>
+          <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20criar%20o%20meu%20site."
+            target="_blank" class="btn btn-whatsapp-hero btn-cta-main">
+            <i data-lucide="message-circle"></i>
+            <span>Conversar no WhatsApp Agora</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ========================================================
-       PERGUNTAS FREQUENTES (FAQ DIRETO AO PONTO)
+       PERGUNTAS FREQUENTES (FAQ ENXUTO)
        ======================================================== -->
-  <section id="faq" class="section-compact" style="padding-top: 1.5rem; padding-bottom: 3.5rem;">
+  <section id="faq" class="section" style="padding-top: 0; padding-bottom: 3.5rem;">
     <div class="container">
       <div class="section-head" style="margin-bottom: 1.75rem;">
         <span class="section-tag">Dúvidas Frequentes</span>
-        <h2 class="section-title">Perguntas <span class="silver-text">Rápidas</span></h2>
+        <h2 class="section-title">Perguntas <span class="cyan-text-gradient">Rápidas</span></h2>
       </div>
 
       <div class="faq-accordion">
@@ -488,7 +634,8 @@
             <i data-lucide="chevron-down" class="faq-icon"></i>
           </button>
           <div class="faq-answer">
-            <p>Em média de 4 a 7 dias úteis após o alinhamento das informações e fotos do seu negócio.</p>
+            <p>Em média de <strong>4 a 7 dias úteis</strong> após o alinhamento das informações e fotos do seu negócio.
+            </p>
           </div>
         </div>
 
@@ -498,7 +645,8 @@
             <i data-lucide="chevron-down" class="faq-icon"></i>
           </button>
           <div class="faq-answer">
-            <p>Sim! É 100% responsivo, funcionando perfeitamente em celulares (Android e iPhone) e computadores.</p>
+            <p>Sim! É 100% responsivo, funcionando perfeitamente em celulares (Android e iPhone), tablets e
+              computadores.</p>
           </div>
         </div>
 
@@ -508,7 +656,7 @@
             <i data-lucide="chevron-down" class="faq-icon"></i>
           </button>
           <div class="faq-answer">
-            <p>Basta clicar no botão de WhatsApp. Conversamos sobre o seu projeto e cuidamos de toda a criação.</p>
+            <p>Basta clicar no botão de WhatsApp. Conversamos sobre o que sua empresa precisa e iniciamos a criação.</p>
           </div>
         </div>
       </div>
@@ -516,7 +664,7 @@
   </section>
 
   <!-- ========================================================
-       RODAPÉ MINIMALISTA
+       RODAPÉ LIMPO E DIRETO
        ======================================================== -->
   <footer class="site-footer">
     <div class="container footer-content">
@@ -524,40 +672,39 @@
         <a href="#inicio" class="logo-link">
           <img src="assets/logo.jpg" alt="Logo Crona Web" class="logo-img" style="height: 36px;">
           <div class="logo-text">
-            <span class="logo-title" style="font-size: 1.1rem;">CRONA</span>
-            <span class="logo-subtitle" style="font-size: 0.55rem;">WEB</span>
+            <span class="logo-title">CRONA</span>
+            <span class="logo-subtitle">WEB</span>
           </div>
         </a>
-        <p style="font-size: 0.85rem; color: var(--silver-400); margin-top: 0.4rem;">
-          Desenvolvimento de sites modernos e sistemas de agendamento online.
+        <p class="footer-desc">
+          Desenvolvimento de sites profissionais e sistemas de agendamento online.
         </p>
       </div>
 
       <div class="footer-actions">
         <!-- Instagram Oficial -->
-        <a href="https://instagram.com/cronaweb" target="_blank" class="btn btn-glass"
-          style="font-size: 0.85rem; padding: 0.55rem 1.15rem;" aria-label="Instagram Crona Web">
+        <a href="https://instagram.com/cronaweb" target="_blank" class="btn btn-glass footer-btn"
+          aria-label="Instagram Crona Web">
           <svg class="insta-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
           </svg>
-          <span>@cronaweb</span>
+          <span>Instagram @cronaweb</span>
         </a>
 
         <!-- WhatsApp Oficial -->
         <a href="https://wa.me/5564992517948?text=Ol%C3%A1%20Crona%20Web!%20Gostaria%20de%20um%20or%C3%A7amento."
-          target="_blank" class="btn btn-glass" style="font-size: 0.85rem; padding: 0.55rem 1.15rem;"
-          aria-label="WhatsApp Crona Web">
+          target="_blank" class="btn btn-glass footer-btn" aria-label="WhatsApp Crona Web">
           <i data-lucide="message-circle" style="width: 16px; height: 16px; color: #25d366;"></i>
-          <span>(64) 99251-7948</span>
+          <span>WhatsApp (64) 99251-7948</span>
         </a>
       </div>
     </div>
-    <div class="container"
-      style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1.25rem; margin-top: 1.75rem; text-align: center; font-size: 0.76rem; color: var(--silver-500);">
-      &copy; 2026 Crona Web. Todos os direitos reservados.
+
+    <div class="container footer-bottom-bar">
+      <span>&copy; 2026 Crona Web. Todos os direitos reservados.</span>
     </div>
   </footer>
 
